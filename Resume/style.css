@@ -58,10 +58,15 @@ body {
   margin-right: 0;
 }
 
-.menu {
+.menu li {
   margin:0 auto;
   padding: 0;
   display: inline;
+  text-align: center;
+}
+
+.menu {
+  margin:0 auto;
   text-align: center;
 }
 
