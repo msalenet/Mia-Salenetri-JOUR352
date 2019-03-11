@@ -29,16 +29,19 @@
 
   .headshot {
       width:300px;
+      margin-top: 15px;
   }
   @media screen and (max-width:300px) {
       .headshot {
           width:100%;
       }
+
   }
 
   #aboutme {
       border: solid 3px #CC8CC3;
       border-radius: 15px;
+      margin-top: 15px;
   }
 
   .pbsthumb {
@@ -54,7 +57,11 @@
       color: #CCB344;
   }
 
-    #vidtitle {
+  h3 {
+    color: #6343B2;
+  }
+
+  #vidtitle {
         text-align: right;
     }
 
@@ -63,7 +70,25 @@
       border-radius: 15px;
   }
 
+  #right-align {
+      text-align: right;
+  }
 
+  #workexp {
+    border: solid 3px #CC8CC3;
+    border-radius: 15px;
+  }
+
+  .nature {
+    width: 640px;
+    height: 320px;
+    align-items: right;
+  }
+  @media screen and (max-width:640px) {
+      .nature {
+          width:100%;
+      }
+  }
 
 
 </style>
@@ -100,7 +125,8 @@
 <br>
 
 <!--video experience-->
-<div class="container" id="vidtitle">
+<div id="videxp">
+<div class="container">
         <div class="row">
 
                 <div class="col-md-12">
@@ -109,8 +135,9 @@
                 </div>
         </div>
 </div>
+<br>
 <!--PBS Newshour-->
-<div id="videxp">
+
 <div class="container">
         <div class="row">
 
@@ -119,8 +146,8 @@
                 </div>
 
                 <div class="col-md-4">
-                        <h3>Why Innocent People Plead Guilty</h3>
-                        <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+                        <h3 id="right-align">Why Innocent People Plead Guilty to Crimes they Didn't Commit</h3>
+                        <p id="right-align">Two brothers wrongly convicted of murder were granted a new trial, but then they faced an excruciating decision: plead guilty to a lesser crime and go home as convicted felons, or risk trial and the chance of going back to prison. Video produced, shot, written and edited by myself and four other student field producers. With Tom Bettag as our EP and John Yang as our correspondent, we produced a 10-minute story that aired on national television.</p>
                 </div>
         </div>
 </div>
@@ -132,12 +159,12 @@
         <div class="row">
 
                 <div class="col-md-4">
-                        <h3>Second Video Title</h3>
-                        <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+                        <h3>New Nature Exhibit at Artechouse</h3>
+                        <p>Hidden in the southwest corner of DC is Artechouse is a visual and technological art museum: Artechouse. Marpi's New Nature exhibit is the epitome of innovative art. Video shot, edited, written and tracked by me on a two day deadline.</p>
                 </div>
 
                 <div class="col-md-8">
-                        <p> <a href="https://www.pbs.org/newshour/show/why-defendants-plead-guilty-to-crimes-they-didnt-commit" target="_blank"> <img src="pbsthumb.png" class="pbsthumb"> </a>  </p>
+                        <p> <iframe src="https://player.vimeo.com/video/303566718" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="nature" id="right-align"></iframe></p>
                 </div>
 
 
@@ -155,8 +182,8 @@
                 </div>
 
                 <div class="col-md-4">
-                        <h3>Third Video Title</h3>
-                        <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+                        <h3 id="right-align">Third Video Title</h3>
+                        <p id="right-align">Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
                 </div>
         </div>
 </div>
@@ -169,19 +196,19 @@
         <div class="row">
 
                 <div class="col-md-4">
-                        <h3>mini vid 1</h3>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <h3>Crime in College Park</h3>
+                        <p><iframe src="https://player.vimeo.com/video/295206109" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
                 </div>
 
 
                 <div class="col-md-4">
-                        <h3>mini vid 2</h3>
-                        <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+                        <h3>Insect Petting Zoo</h3>
+                        <p><iframe src="https://player.vimeo.com/video/268421534" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
                 </div>
 
                 <div class="col-md-4">
-                        <h3>mini vid 3</h3>
-                        <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <h3>Walkout for Gun Reform</h3>
+                        <p><iframe src="https://player.vimeo.com/video/260466634" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
                 </div>
         </div>
 </div>
@@ -190,17 +217,37 @@
 <br>
 
 <!--work experience-->
+<div id="workexp">
+  <div class="container">
+          <div class="row">
+
+                  <div class="col-md-12">
+                          <h2>WORK EXPERIENCE</h2>
+
+                  </div>
+          </div>
+  </div>
+  <br>
 <!--work 1-->
 <div class="container">
         <div class="row">
 
                 <div class="col-md-8">
-                        <h3>CNS stuff</h3>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <h3>Live Broadcast Production Head and Producer</h3>
+                        <h4><i>Capital News Service</i></h4>
+                        <p>I volunteer to run a live news broadcast, Capital News Service's <strong>Maryland Newsline</strong>, three nights a week. My responsibilities include directing, technical directing, scheduling full crews and teaching graphics workshops using Adobe After Effects.
+                          <br><br>
+                        As a producer I:
+                        <ul>
+                          <li> Wrote and stacked a half hour newscast for Capital News Service's Maryland Newsline.</li>
+                          <li> Field produced live broadcast from National Christmas Tree Lighting in Washington, DC.</li>
+                          <li> Coordinated live shots with reporters out in the field.</li>
+                          <li> Built necessary graphics and cut video for newscasts.</li>
+                          <li> Assisted and managed student reporters.</li></p>
                 </div>
 
                 <div class="col-md-4">
-                        <h3>Some media here</h3>
+                        <h3> </h3>
                         <p></p>
                 </div>
         </div>
@@ -212,13 +259,14 @@
         <div class="row">
 
                 <div class="col-md-4">
-                        <h3>Some media here</h3>
+                        <h3> </h3>
                         <p></p>
                 </div>
 
                 <div class="col-md-8">
-                        <h3>Laslo</h3>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <h3 id="right-align">Congressional Reporting Intern</h3>
+                        <h4 id="right-align"><i>Laslo Congressional Bureau</i></h4>
+                        <p id="right-align">Intern with Matt Laslo, freelance reporter, out of the Capitol building. Responsibilities included: attending and summarizing press conferences, researching details and context of legislation, pitching story ideas for National Native News, tracking down and interviewing Senators and Representatives, and writing radio stories for National Native News.</p>
                 </div>
 
         </div>
@@ -230,17 +278,19 @@
         <div class="row">
 
                 <div class="col-md-8">
-                        <h3>Chicago</h3>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <h3>Field Producer</h3>
+                        <h4><i>Capital News Service/PBS Newshour</i></h4>
+                        <p>I worked under Tom Bettag as a field producer covering a heavily detailed and researched long-form project. The semester consisted of research into the criminal justice system and combing through legal documents, writing and rewriting scripts, and editing the video story. Three other student producers and I traveled to Chicago, IL with PBS correspondent John Yang to film our story. The ten minute broadcast news story aired on the PBS Newshour.</p>
                 </div>
 
                 <div class="col-md-4">
-                        <h3>Some media here</h3>
+                        <h3> </h3>
                         <p></p>
                 </div>
         </div>
 </div>
 
+</div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
