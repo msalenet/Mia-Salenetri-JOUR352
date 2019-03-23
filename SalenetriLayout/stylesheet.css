@@ -1,0 +1,38 @@
+#content {
+  margin: 0 auto;
+  width: 900px;
+}
+
+#byline {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+h1 {
+  font-family: helvetica, sans-serif;
+  font: 20px;
+}
+
+p {
+  font-family: georgia, serif;
+  font-size: 13px;
+}
+
+img {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+blockquote {
+  font-family:sans-serif;
+  font-size: 25px;
+  text-align: right;
+  color: #9a4f4f;
+}
+
+.banner {
+  align-content: center;
+  margin-left: 250px;
+}
