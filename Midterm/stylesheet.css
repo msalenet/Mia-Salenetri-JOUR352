@@ -103,8 +103,3 @@ blockquote {
   background-image: linear-gradient(to right, #6d411e, #b76f37);
   opacity: .7;
 }
-
-.quote {
-  align: right;
-  max-width: 700px;
-}
