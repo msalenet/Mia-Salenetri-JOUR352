@@ -1,0 +1,110 @@
+
+.banner {
+  width: 2100px;
+}
+@media screen and (max-width: 2100px) {
+    .banner {
+        width:100%;
+    }
+}
+
+.bg {
+  background-image: linear-gradient(#aa886f, #7b9889);
+}
+
+h1 {
+  font-family: cochin, serif;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: cochin, serif;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: cochin, serif;
+  font-size: 20px;
+}
+
+#byline {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#date {
+  font-size: 15px;
+}
+
+#post {
+  font-size: 15px;
+}
+
+p {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+}
+
+#storytxt {
+  text-align: center;
+  max-width: 1800px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 10px;
+}
+
+#map {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+    #map {
+        width:100%;
+    }
+}
+
+#img {
+  min-width: 100px;
+}
+@media screen and (min-width: 100px) {
+    #img {
+        width:100%;
+    }
+}
+
+/*q & a section*/
+.Q {
+  text-align: left;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.A {
+  text-align: right;
+}
+
+.burner {
+  font-weight: bold;
+}
+
+#list {
+  text-align: center;
+  color: #aa886f;
+}
+
+blockquote {
+  color: #1d4431;
+  font-weight: bolder;
+  font-size: 37px;
+  font-family: cochin, serif;
+  text-align: right;
+  border-left: 8px solid #000000;
+  background-image: linear-gradient(to right, #6d411e, #b76f37);
+  opacity: .7;
+}
+
+.quote {
+  align: right;
+  max-width: 700px;
+}
