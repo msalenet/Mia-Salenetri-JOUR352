@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="engl">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Description of website goes here">
+  <meta name="author" content="Mia Salenetri">
+
+    <title>
+        HTML Frame
+    </title>
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- Load c3.css -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+<!-- Load our CSS -->
+     <link rel="stylesheet" href="style.css">
+
+ <!-- Load d3.js and c3.js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+</head>
+
+
+<body>
+
+<!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="#">Navbar</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Link</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Link 2</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Link 3</a>
+       </li>
+     </ul>
+     <form class="form-inline my-2 my-lg-0">
+       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     </form>
+   </div>
+  </nav>
+<!--end navbar-->
+
+<!--body container div-->
+<div class="cont">
+
+    <p class="headline">This is a Headline</p>
+    <p class="byline">By Mia Salenetri</p>
+
+  <br>
+
+    <p class="chaphead">Chapter One</p>
+    <p class="chapbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet tempor ligula. Integer condimentum aliquam justo at placerat. Quisque suscipit ex et arcu euismod, non ullamcorper mi mattis. Donec quis semper magna. Cras gravida vitae libero non accumsan. Etiam at leo laoreet, lacinia enim ut, tincidunt diam. Nunc arcu nisl, tincidunt in volutpat non, scelerisque eget mi. Curabitur fringilla est nec mollis ornare. Duis nec posuere purus. Curabitur consequat gravida ultrices. Pellentesque nec libero tincidunt est pellentesque facilisis. Duis egestas odio neque, vel feugiat tellus aliquet et. Duis quis placerat dui. Maecenas aliquam ligula in blandit pretium. Cras arcu nisl, rhoncus non velit nec, feugiat commodo diam. Morbi euismod tincidunt rhoncus.</p>
+
+  <br>
+
+<!--figure out how to make this image smaller-->
+  <figure class="figure1">
+      <img src="data.jpg" class="figure-img img-fluid rounded" class="data">
+      <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+  </figure>
+
+  <br>
+
+    <p class="chapbody">Nulla nec nibh posuere, blandit tellus et, congue leo. Vivamus eleifend massa eu quam bibendum, ultrices mollis nunc venenatis. Vivamus placerat eu ex sed sodales. Aenean et orci odio. Vivamus rutrum erat eget velit accumsan, eget faucibus orci aliquam. In tempus lacinia mauris, eget euismod odio malesuada sit amet. Sed lacus urna, accumsan at ex eu, dictum faucibus sem. Suspendisse elementum dolor eget purus interdum tincidunt. Integer viverra sed elit non laoreet. Suspendisse vestibulum venenatis finibus. Aliquam ac maximus justo.</p>
+
+<!--2 columns
+  <div class="container">
+          <div class="row">
+
+                  <div class="col-md-8">
+                          <h3>ABOUT ME</h3>
+                          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                  </div>
+
+
+                  <div class="col-md-4">
+
+                          <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                  </div>
+          </div>
+  </div>
+end 2 columns-->
+
+<br>
+
+<br>
+
+<!--3 columns-->
+  <div class="container">
+        <div class="row">
+
+                <div class="col-md-4">
+                        <h3>Heading 1</h3>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+
+
+                <div class="col-md-4">
+                        <h3>Heading 2</h3>
+                        <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+                </div>
+
+                <div class="col-md-4">
+                        <h3>Heading 3</h3>
+                        <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+        </div>
+  </div>
+<!--end 3 columns-->
+
+
+</div>
+<!--end body container-->
+
+<br>
+<!--footer-->
+    <p id="footer">Copyright 2019  Mia Salenetri</p>
+<!--end footer-->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+</!DOCTYPE html>
