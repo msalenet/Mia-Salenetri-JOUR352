@@ -129,7 +129,7 @@
   }
 
   #smalls {
-
+    padding-left: 20px;
   }
   @media screen and (max-width:320px) {
       #smalls {
@@ -220,6 +220,31 @@
     font-size: 10pt;
 }
 
+.contbtn {
+  position: relative;
+  width: 94.5%;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #998997;
+  color: #FFFABE;
+  font-family: Istok Web, sans-serif;
+  font-size: 24px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contbtn .btn:hover {
+  background-color: black;
+}
+
 </style>
 
 </head>
@@ -227,7 +252,7 @@
 <body>
 
 <!--banner-->
-  <img src="newbanner.png" class="banner">
+  <img src="bannernew.png" class="banner">
 
 <!--navbar-->
 <div class="sticky-top">
@@ -259,6 +284,9 @@
       <li class="nav-item active">
         <a class="nav-link" id="social" href="https://www.twitter.com/miasalenetri" target="_blank">Twitter</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="social" href="mailto: miasalenetri@gmail.com" target="_blank">Email</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -273,10 +301,10 @@
               <div class="col-md-8">
                 <br>
                       <h2>ABOUT ME</h2>
-                      <p>I am a storyteller, a researcher, an editor and a politics junkie. I am constantly learning, and I want to use my skills as a digital visual journalist to break down complex political issues using <strong>motion graphics and data visualization. </strong>
-                        <br>
-                        I grew up in a family that was as supportive of creativity as they were about knowledge.
-                        <br>
+                      <p>I am a storyteller, a researcher, an editor and a politics junkie. I am constantly learning, and I want to use my skills as a digital visual journalist to break down complex political issues using <strong>motion graphics and data visualization. </strong></p>
+                        <p>
+                        I grew up in a family that was as supportive of creativity as they were about knowledge. I carry that with me through every story I write.
+                      </p><p>
                         During my time as a journalism student, I've noticed that context is essential to news. But more often than not, history, influences, implications and motivations are left to the footnotes, if not the wayside. I want to be able to provide that necessary background information.</p>
               </div>
 
@@ -307,12 +335,12 @@
 <div class="container">
         <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-5">
                   <h3 id="left-align">Data Breaches, Explained (Intro)</h3>
                   <p id="left-align">It seems like every year, we hear about more data breaches, more hacking and more people affected. But what is a data breach, and what can hackers do with your information? Video researched, written, and animated with Adobe After Effects by me. <br><br> While my final video is still in the works, here's a teaser of what's to come.</p>
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-md-7">
                   <p> <iframe src="https://player.vimeo.com/video/330038982" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="nature" id="right-align"></iframe>
                     </p>
                 </div>
@@ -324,11 +352,14 @@
 <div class="container">
         <div class="row">
 
-                <div class="col-md-8">
-                        <p> <a href="https://www.pbs.org/newshour/show/why-defendants-plead-guilty-to-crimes-they-didnt-commit" target="_blank"> <img src="pbs.png" class="pbsthumb"> </a> </p>
+                <div class="col-md-7">
+                <div class="contbtn">
+                        <p> <img src="pbs.png" class="pbsthumb">
+                          <a href="https://www.pbs.org/newshour/show/why-defendants-plead-guilty-to-crimes-they-didnt-commit" target="_blank"><button class="btn"> PLAY</button> </a> </p>
+                </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-5">
                         <h3 id="right-align">Why Innocent People Plead Guilty to Crimes they Didn't Commit</h3>
                         <p id="right-align">Two brothers wrongly convicted of murder were granted a new trial, but then they faced an excruciating decision: plead guilty to a lesser crime and go home as convicted felons, or risk trial and the chance of going back to prison. Video produced, shot, written and edited by myself and four other student field producers. With Tom Bettag as our EP and John Yang as our correspondent, we produced a 10-minute story that aired on national television.</p>
                 </div>
@@ -341,12 +372,12 @@
 <div class="container">
         <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-5">
                         <h3>New Nature Exhibit at Artechouse</h3>
                         <p>Hidden in the southwest corner of DC is a visual and technological art museum: Artechouse. Marpi's New Nature exhibit is the epitome of innovative art— and it features just a touch of life. Video shot, edited, written and tracked by me on a two day deadline.</p>
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-md-7">
                         <p> <iframe src="https://player.vimeo.com/video/303566718" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="nature" id="right-align"></iframe></p>
                 </div>
 
