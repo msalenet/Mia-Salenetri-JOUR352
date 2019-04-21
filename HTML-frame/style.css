@@ -31,6 +31,14 @@
   font-size: 1em;
 }
 
+.chead {
+  text-align:center;
+  font-family: sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: violet;
+}
+
 .data {
   max-width:300px;
 }
