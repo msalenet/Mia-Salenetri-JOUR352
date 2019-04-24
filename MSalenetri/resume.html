@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html lang="engl">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="My personal resume portfolio site">
+  <meta name="author" content="Mia Salenetri">
+
+  <title>
+    Mia Salenetri
+  </title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<body style="background-color:#b2a5ba;">
+
+<style>
+  .banner {
+      width:2100px;
+  }
+  @media screen and (max-width: 2100px) {
+      .banner {
+          width:100%;
+      }
+  }
+
+  .headshot {
+      width:300px;
+      margin-top: 15px;
+  }
+  @media screen and (max-width:300px) {
+      .headshot {
+          width:100%;
+      }
+
+  }
+
+  .realres {
+      align-items: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+  }
+
+
+  #aboutme {
+      border: solid 3px #CC8CC3;
+      border-radius: 15px;
+      margin-top: 15px;
+      background-color: #fff7fe;
+  }
+
+  .pbsthumb {
+      width:600px;
+  }
+  @media screen and (max-width:600px) {
+      .pbsthumb {
+          width:100%;
+      }
+  }
+
+  h2 {
+      color: #CCB344;
+      font-family: Istok Web, sans-serif;
+      font-size: 2.25em;
+  }
+
+  h3 {
+      color: #6343B2;
+      font-family: Istok Web, sans-serif;
+      font-size: 1.75em;
+  }
+
+  h4 {
+    font-family: Istok Web, sans-serif;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-family: Lora, serif;
+  }
+
+  #vidtitle {
+      text-align: right;
+    }
+
+  #videxp {
+      border: solid 3px #CC8CC3;
+      border-radius: 15px;
+      background-color: #fff7fe;
+      margin-left: 70px;
+      margin-right: 70px;
+  }
+/*test
+  @media screen and (max-width: 2100px) {
+      #videxp {
+          width:100%;
+      }
+  }
+*/
+  #right-align {
+      text-align: right;
+  }
+
+
+  #workexp {
+    border: solid 3px #CC8CC3;
+    border-radius: 15px;
+    background-color: #fff7fe;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .nature {
+    width: 640px;
+    height: 320px;
+    align-items: right;
+  }
+  @media screen and (max-width:640px) {
+      .nature {
+          width:100%;
+      }
+  }
+
+  #smalls {
+    padding-left: 20px;
+  }
+  @media screen and (max-width:320px) {
+      #smalls {
+          align-items: center;
+          width:100%;
+      }
+  }
+
+  #plist {
+    font-family: Lora;
+  }
+
+  #prlist {
+    font-family: Lora;
+    margin-right: 15px;
+  }
+
+  #navbar {
+    font-family: Istok Web;
+  }
+
+  #skills {
+    border: solid 3px #CC8CC3;
+    border-radius: 15px;
+    background-color: #fff7fe;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  #resume {
+    border: solid 3px #CC8CC3;
+    border-radius: 15px;
+    background-color: #fff7fe;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  #social {
+    color: purple;
+  }
+
+/*skill bars*/
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skillbar-bar:before {
+    background: #eee;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.skillbar-bar {
+    height: 3px;
+    width: 0px;
+    background: #323232;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    color: #323232;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: Lora;
+}
+
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #323232;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Lora;
+}
+
+  #footer {
+    margin-left: 70px;
+    font-family: Lora;
+    font-size: 10pt;
+}
+
+.contbtn {
+  position: relative;
+  width: 94.5%;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #998997;
+  color: #FFFABE;
+  font-family: Istok Web, sans-serif;
+  font-size: 24px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contbtn .btn:hover {
+  background-color: black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!--banner-->
+  <img src="bannernew.png" class="banner">
+
+<!--navbar-->
+<div class="sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#aboutme">About Me</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#videxp">Video Experience</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#workexp">Work Experience</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="social" href="https://www.linkedin.com/in/miasalenetri/" target="_blank">LinkedIn</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="social" href="https://www.vimeo.com/miasalenetri" target="_blank">Vimeo</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="social" href="https://www.twitter.com/miasalenetri" target="_blank">Twitter</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="social" href="mailto: miasalenetri@gmail.com" target="_blank">Email</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<br>
+<br>
+
+<!--about me-->
+<div class="container" id="aboutme">
+      <div class="row">
+
+              <div class="col-md-8">
+                <br>
+                      <h2>ABOUT ME</h2>
+                      <p>I am a storyteller, a researcher, an editor and a politics junkie. I am constantly learning, and I want to use my skills as a digital visual journalist to break down complex political issues using <strong>motion graphics and data visualization. </strong></p>
+                        <p>
+                        I grew up in a family that was as supportive of creativity as they were about knowledge. I carry that with me through every story I write.
+                      </p><p>
+                        During my time as a journalism student, I've noticed that context is essential to news. But more often than not, history, influences, implications and motivations are left to the footnotes, if not the wayside. I want to be able to provide that necessary background information.</p>
+              </div>
+
+              <div class="col-md-4">
+                      <p> <img src="resume.png" class="headshot"> </p>
+              </div>
+      </div>
+</div>
+
+<br>
+<br>
+
+<!--video experience-->
+<div id="videxp">
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-12">
+                  <br>
+                        <h2>VIDEO AND GRAPHICS EXPERIENCE</h2>
+
+                </div>
+        </div>
+</div>
+<br>
+
+<!--DATA BREACH-->
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-5">
+                  <h3 id="left-align">Data Breaches, Explained (Intro)</h3>
+                  <p id="left-align">It seems like every year, we hear about more data breaches, more hacking and more people affected. But what is a data breach, and what can hackers do with your information? Video researched, written, and animated with Adobe After Effects by me. <br><br> While my final video is still in the works, here's a teaser of what's to come.</p>
+                </div>
+
+                <div class="col-md-7">
+                  <p> <iframe src="https://player.vimeo.com/video/330038982" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="nature" id="right-align"></iframe>
+                    </p>
+                </div>
+        </div>
+</div>
+
+
+<!--PBS Newshour-->
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-7">
+                <div class="contbtn">
+                        <p> <img src="pbs.png" class="pbsthumb">
+                          <a href="https://www.pbs.org/newshour/show/why-defendants-plead-guilty-to-crimes-they-didnt-commit" target="_blank"><button class="btn"> PLAY</button> </a> </p>
+                </div>
+                </div>
+
+                <div class="col-md-5">
+                        <h3 id="right-align">Why Innocent People Plead Guilty to Crimes they Didn't Commit</h3>
+                        <p id="right-align">Two brothers wrongly convicted of murder were granted a new trial, but then they faced an excruciating decision: plead guilty to a lesser crime and go home as convicted felons, or risk trial and the chance of going back to prison. Video produced, shot, written and edited by myself and four other student field producers. With Tom Bettag as our EP and John Yang as our correspondent, we produced a 10-minute story that aired on national television.</p>
+                </div>
+        </div>
+</div>
+
+<br>
+
+<!--Artechouse-->
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-5">
+                        <h3>New Nature Exhibit at Artechouse</h3>
+                        <p>Hidden in the southwest corner of DC is a visual and technological art museum: Artechouse. Marpi's New Nature exhibit is the epitome of innovative art— and it features just a touch of life. Video shot, edited, written and tracked by me on a two day deadline.</p>
+                </div>
+
+                <div class="col-md-7">
+                        <p> <iframe src="https://player.vimeo.com/video/303566718" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="nature" id="right-align"></iframe></p>
+                </div>
+
+
+        </div>
+</div>
+
+<br>
+
+<!--third video
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-8">
+                        <p> <a href="https://www.pbs.org/newshour/show/why-defendants-plead-guilty-to-crimes-they-didnt-commit" target="_blank"> <img src="pbsthumb.png" class="pbsthumb"> </a> </p>
+                </div>
+
+                <div class="col-md-4">
+                        <h3 id="right-align">Third Video Title</h3>
+                        <p id="right-align">Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+                </div>
+        </div>
+</div>
+-->
+<br>
+
+<!--smaller videos-->
+<!--add in the photo link code / vimeo embed-->
+<div class="container">
+        <div class="row" id="smalls">
+
+                <div class="col-md-4">
+                        <h3>Crime in College Park</h3>
+                        <p><iframe src="https://player.vimeo.com/video/295206109" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+                </div>
+
+
+                <div class="col-md-4">
+                        <h3>Insect Petting Zoo</h3>
+                        <p><iframe src="https://player.vimeo.com/video/268421534" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+                </div>
+
+                <div class="col-md-4">
+                        <h3>Walkout for Gun Reform</h3>
+                        <p><iframe src="https://player.vimeo.com/video/260466634" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+                </div>
+        </div>
+</div>
+</div>
+<br>
+<br>
+
+
+<!--work experience-->
+<div id="workexp">
+  <div class="container">
+          <div class="row">
+
+                  <div class="col-md-12">
+                    <br>
+                          <h2>WORK EXPERIENCE</h2>
+
+                  </div>
+          </div>
+  </div>
+  <br>
+<!--CNS-->
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-9">
+                        <h3>Live Broadcast Production Head and Producer</h3>
+                        <h4><i>Capital News Service</i></h4>
+                        <p>
+                        As a production head I direct and technical direct a live news broadcast two nights a week. I build graphics needed for the show, like weather, over the shoulders, and lower thirds using Adobe After Effects. At least twice a semester I teach a crash course in our After Effects graphics package to reports and producers. I also schedule and assign student volunteers to all show positions i.e. camera, audio board, etc.</p>
+
+                        <p>
+                        As a news producer I stacked half hour newscast Maryland Newsline, a live broadcast airing three nights a week. Every day I wrote 15-20 stories using ENPS including opens, teases, VOs and readers. As the sole producer, I was responsible for keeping reporters on deadline while monitoring breaking news. I coordinated live shots with reporters out in the field and field produced live broadcast from National Christmas Tree Lighting in Washington, DC.</p>
+                </div>
+
+                <div class="col-md-3">
+                        <h3> </h3>
+                        <p></p>
+                </div>
+        </div>
+</div>
+
+<br>
+<!--LASLO-->
+<div class="container">
+        <div class="row">
+
+                      <div class="col-md-3">
+                        <h3> </h3>
+                         <p></p>
+                      </div>
+                <div class="col-md-9">
+                        <h3 id="right-align">Congressional Reporting Intern</h3>
+                        <h4 id="right-align"><i>Laslo Congressional Bureau</i></h4>
+                        <p id="right-align"> Intern with Matt Laslo, freelance reporter, out of the Senate press office in the US Capitol building. I attended and summarized daily Senate and House leadership press conferences. I often did research for stories and was assigned to compiling data about franked mail. I attended and summarized press conferences for proposed legislation including including 3D printed guns and Children's educational TV. I wrote a radio story for National Native News and transcribed interviews with lawmakers for radio stories.</p>
+                </div>
+
+
+        </div>
+</div>
+
+<br>
+<!--FIELD-->
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-9">
+                        <h3>Field Producer</h3>
+                        <h4><i>Capital News Service/PBS Newshour</i></h4>
+                        <p>I worked under Tom Bettag as a field producer covering a heavily detailed and researched long-form story about plea bargains and the criminal justice system. Three other student producers and I traveled to Chicago, IL with PBS correspondent John Yang to film our story. The ten minute broadcast news story aired on the PBS Newshour. The semester consisted of intense research, combing through legal documents, writing and rewriting scripts, and editing the final video story. </p>
+                </div>
+
+                <div class="col-md-3">
+                        <h3> </h3>
+                        <p></p>
+                </div>
+        </div>
+</div>
+
+</div>
+
+<br><br>
+
+<!--skills-->
+<div id="skills">
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-12">
+                  <br>
+                        <h2>SKILLS</h2>
+
+                </div>
+        </div>
+</div>
+
+<br>
+
+<div class="container">
+        <div class="row">
+
+                <div class="col-md-6">
+                        <h5>
+                          <ul>
+                            <li id="plist">Adobe Creative Suite</li>
+                            <li id="plist">HTML and CSS</li>
+                            <li id="plist">Data analysis and visualization</li>
+                            <li id="plist">Social media content development</li>
+                          </ul>
+                        </h5>
+
+
+                </div>
+
+                <div class="col-md-6">
+                        <h5>
+                          <ul>
+                            <li id="plist">Audio mixing (live and post-production)</li>
+                            <li id="plist">Live production project management</li>
+                            <li id="plist">Survey design</li>
+                            <li id="plist">Newtek TriCaster 8000 and Skype TX</li>
+                          </ul>
+                        </h5>
+
+                </div>
+        </div>
+</div>
+</div>
+
+
+
+<!--skills w bars
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="skillbar" data-percent="90%">
+                    <div class="skillbar-title">Adobe Premiere Pro</div>
+                    <div class="skill-bar-percent">90%</div>
+                    <div class="skillbar-bar" style="width: 90%;"></div>
+                </div>
+
+                <div class="skillbar" data-percent="65%">
+                    <div class="skillbar-title">Adobe After Effects</div>
+                    <div class="skill-bar-percent">65%</div>
+                    <div class="skillbar-bar" style="width: 65%;"></div>
+                </div>
+
+                <div class="skillbar" data-percent="75%">
+                    <div class="skillbar-title">Live broadcast production</div>
+                    <div class="skill-bar-percent">75%</div>
+                    <div class="skillbar-bar" style="width: 75%;"></div>
+                </div>
+
+                <div class="skillbar" data-percent="70%">
+                    <div class="skillbar-title">data analysis</div>
+                    <div class="skill-bar-percent">70%</div>
+                    <div class="skillbar-bar" style="width: 70%;"></div>
+                </div>
+
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title">web content development</div>
+                    <div class="skill-bar-percent">80%</div>
+                    <div class="skillbar-bar" style="width: 80%;"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<br>
+</div>
+
+<!--resume
+
+<div id="resume">
+  <div class="container">
+          <div class="row">
+
+                  <div class="col-md-12">
+                    <br>
+                          <h2>RESUME</h2>
+
+                  </div>
+          </div>
+  </div>
+
+  <div class="container">
+          <div class="row">
+
+                  <div class="col-md-12">
+                    <p> <img src="realresume.png" class="realres"> </p>
+
+                  </div>
+          </div>
+  </div>
+
+</div>
+-->
+<!--footer-->
+<br><br>
+
+<footer id="footer">&copy; Copyright Mia Salenetri, 2019</footer>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+
+  </html>
+
+  </!DOCTYPE html>
