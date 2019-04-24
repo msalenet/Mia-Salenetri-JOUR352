@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="engl">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The American tragedy of gun voilence">
+  <meta name="author" content="Mia Salenetri">
+
+    <title>
+        HTML Frame
+    </title>
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- Load c3.css -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+<!-- Load our CSS -->
+     <link rel="stylesheet" href="style.css">
+
+ <!-- Load d3.js and c3.js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+</head>
+
+
+<body class="body">
+
+<!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <a class="navbar-brand" href="#"><img src="images/star-red.png" id="star-top"> <img src="images/star-blue.png" id="star-top">An American Tragedy</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="#">Where & When <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">The Carnage</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">A Profile</a>
+       </li>
+     </ul>
+   </div>
+  </nav>
+<!--end navbar-->
+
+<!--body container div-->
+<div class="cont">
+
+    <img src="images/ar15.jpg" class="hero-image">
+    <p class="headline">An <span class="blue">American</span> Tragedy</p>
+    <p class="byline">Over 200 school shootings in two decades.<br> What have we learned?</p>
+
+  <br>
+    <div class="starz"><center>
+    <img src="images/star-red.png" id="star"> <img src="images/star-blue.png" id="star"><img src="images/star-red.png" id="star"> <img src="images/star-blue.png" id="star"></center>
+  </div>
+
+    <p class="sumbody">In 1999, two young men killed 12 students and wounded 24 others at Columbine High School in Littleton, Colorado. The incident sparked a long series of school shootings in the United States that has continues to this day. Not a single year has passed since 1999 without at least five school shootings in the U.S. There have been at least 214 school shootings since Columbine, according to newly released data by The Washington Post that examines school shootings at secondary and primary schools in the U.S since the Columbine shooting.</p>
+
+  <br>
+
+  <img src="images/alaina-petty.jpg" class="stack-image"><br>
+  <p class="caption">Caption: Insert image or video above</p>
+
+<div class="row">
+
+    <p class="chaphead"><img src="images/star-red.png" id="star-chap"> <img src="images/star-blue.png" id="star-chap">School shootings happen all over the U.S.</p>
+    <p class="chapbody"> At least five school school shootings have occurred every year since 1999, with an average number of 11 shootings per-year.  2006 and 2014 had the highest number of incidents with fifteen and sixteen school shootings, respectively. As can be seen the chart below, the past three years have remained consistently high, with at least a dozen incidents each year.</p>
+
+    <!-- Graphic container-->
+      <div class="graphic-container">
+      <h2>Shootings by year</h2>
+      <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+      <div id="shootingsByYearChart"></div>
+      <em><center>Source: Data collected by The Washington Post</center></em>
+      </div>
+    <!-- END graphic container-->
+
+    <p class="chapbody">School shootings have occured all over the United States, as seen in the map below. In general, higher population areas have seen more incidents, with shootings clustered on the east and west coasts. California, which is the most populous state in the country, had 27 school shooting incidents since 1999, the most of any state. The next highest state was Florida with 16 school shootings since 1999.</p>
+
+
+
+
+    <p class="chapbody">An analysis of the data shows that cities with the most number of school shootings tend to be large urban areas with high crime rates. Chicago, Los Angeles and Philadelphia top the list with five school shootings each. The data also reveals that the majority of shootings occur in places that would be considered “cities”, while just 14% occur in rural areas (see chart below).</p>
+
+
+
+    <p class="chapbody">Almost all school shootings occur at public schools. According to the data collected by the Washington Post, only 5% of school shootings since 1999 have occured at a private school.</p>
+
+</div>
+
+
+</div>
+<!--end body container-->
+
+<br>
+<!--footer-->
+    <p id="footer">Copyright 2019  Mia Salenetri</p>
+<!--end footer-->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<!-- c3 script-->
+  <script>
+    //CHART 1
+        var chart = c3.generate({
+ bindto: '#shootingsByYearChart',
+ data: {
+   x: 'x',
+   columns: [
+     ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+     ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
+   ]
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+ }
+});
+  </script>
+
+</body>
+
+</html>
+
+</!DOCTYPE html>
