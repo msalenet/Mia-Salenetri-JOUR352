@@ -72,66 +72,73 @@
 <!--body container div-->
 <div class="cont">
 
-    <p class="headline">This is a Headline</p>
+    <p class="headline">After the Data Breach</p>
     <p class="byline">By Mia Salenetri</p>
 
   <br>
 
-    <p class="chaphead">Chapter One</p>
-    <p class="chapbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet tempor ligula. Integer condimentum aliquam justo at placerat. Quisque suscipit ex et arcu euismod, non ullamcorper mi mattis. Donec quis semper magna. Cras gravida vitae libero non accumsan. Etiam at leo laoreet, lacinia enim ut, tincidunt diam. Nunc arcu nisl, tincidunt in volutpat non, scelerisque eget mi. Curabitur fringilla est nec mollis ornare. Duis nec posuere purus. Curabitur consequat gravida ultrices. Pellentesque nec libero tincidunt est pellentesque facilisis. Duis egestas odio neque, vel feugiat tellus aliquet et. Duis quis placerat dui. Maecenas aliquam ligula in blandit pretium. Cras arcu nisl, rhoncus non velit nec, feugiat commodo diam. Morbi euismod tincidunt rhoncus.</p>
+    <p class="chapbody">If you stayed at a hotel owned by Marriott between 2014 and 2018, there’s a chance that hackers have access to some of your personal information. They announced in November that for those four years, more than 500 million customers’ names, addresses, credit card numbers, phone numbers and passport numbers were accessible to hackers. The number was later reduced.</p>
 
   <br>
 
-<div id="myLineChart"></div>
+  <p class="chaphead"> An increase in the number of data breaches and the number of people affected </p>
+  <!--i have no clue why i can't change the axis values-->
+  <div id="chart"></div>
+
 
   <!-- first graphic container-->
  <div class="graphic-container">
-   <h3>Shootings by year</h3>
-   <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
-   <div id="myLineChart"></div>
-   <em>Source: Data collected by The Washington Post</em>
+   <p class="chapbody">After an investigation, CEO Arne Sorenson announced the details: up to 383 million guest records and were breached. That involved 18.5 million encrypted passport numbers, 5.25 million unencrypted passport numbers, 9.1 million encrypted payment card numbers, of which 385,000 were valid card numbers.</p>
+   <div id="marriottbrokendown"></div>
+   <em>Source: Sorenson's Senate Testimony</em>
+   <em>NOTE: I'm working on the more specific details of these numbers.</em>
  </div>
  <!-- END first graphic container-->
 
 
-<div id="shootingsByTypeChart"></div>
-
-<div id="resourceOfficersChart"></div>
 
 <!--figure out how to make this image smaller
   <figure class="figure1">
       <img src="data.jpg" class="figure-img img-fluid rounded" class="data">
       <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
   </figure>
-
-  <br>
-
-    <p class="chapbody">Nulla nec nibh posuere, blandit tellus et, congue leo. Vivamus eleifend massa eu quam bibendum, ultrices mollis nunc venenatis. Vivamus placerat eu ex sed sodales. Aenean et orci odio. Vivamus rutrum erat eget velit accumsan, eget faucibus orci aliquam. In tempus lacinia mauris, eget euismod odio malesuada sit amet. Sed lacus urna, accumsan at ex eu, dictum faucibus sem. Suspendisse elementum dolor eget purus interdum tincidunt. Integer viverra sed elit non laoreet. Suspendisse vestibulum venenatis finibus. Aliquam ac maximus justo.</p>
 -->
+  <br><br>
 
-<!--2 columns
+<div class="graphic-container">
+    <p class="chaphead">This was one of the largest data breaches ever, but we still don’t know who is being held accountable.</p>
+    <!--breach timelines-->
+
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1NKm7YNg4XzMlYd8v33OmtCtgYNEy0wVL2WvJuA2q4QM&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</div>
+
+<!--2 columns-->
   <div class="container">
           <div class="row">
 
-                  <div class="col-md-8">
-                          <h3>ABOUT ME</h3>
-                          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                  <div class="col-md-6">
+                      <p class="chapbody">You probably remember the 2013 Yahoo data breach, believed to be the biggest in history. Three billion accounts were potentially compromised. As of last month, Yahoo is offering a $117.5 million settlement to the victims who filed a class action lawsuit against the company. </p> <br><br>
+                      <p class="chapbody">Yahoo, now owned by Verizon, originally proposed a $50 million settlement and offered two years of free credit monitoring for 22 million customers. In January, U.S. District Court Judge Lucy Koh rejected their offer, saying the settlement was not “fundamentally fair, adequate and reasonable.”</p>
                   </div>
 
 
-                  <div class="col-md-4">
+                  <div class="col-md-6">
 
-                          <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                          <img src="yahoo.png" class="yahoo"><figcaption class="figure-caption text-center">NOTE: This will be replaced by my own image.</figcaption>
                   </div>
           </div>
   </div>
-end 2 columns-->
+
 
 <br>
 
+<p class="chaphead"> Consumers don't just need compensation, they need security.</p><br>
+
+<p class="chapbody">The response to a data breach is often one of hindsight. Every year we store more and more of our personal information in the cloud. It's more essential than ever that the companies we put our trust in are actively trying to keep our data safe.<p>
+
 <br>
 
-<!--3 columns-->
+<!--3 columns
   <div class="container">
         <div class="row">
 
@@ -152,11 +159,10 @@ end 2 columns-->
                 </div>
         </div>
   </div>
-<!--end 3 columns-->
+end 3 columns-->
 
-<!--breach timelines-->
+<br>
 
-<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1NKm7YNg4XzMlYd8v33OmtCtgYNEy0wVL2WvJuA2q4QM&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
 
 </div>
 <!--end body container-->
@@ -212,14 +218,44 @@ end 2 columns-->
  }
 });
 
+//breach line graph
+var chart = c3.generate({
+    bindto: '#chart',
+    data: {
+      columns: [
+        ['Data Breaches', 157, 321, 446, 656, 498, 662, 419, 447, 614, 783, 781, 1093, 1579, 1244],
+        ['Records Exposed (in millions)', 66.9, 19.1, 127.7, 35.7, 222.5, 16.2, 22.9, 17.3, 91.98, 85.61, 169.07, 36.6, 178.96, 446.52]
+      ],
+      axes: {
+        data2: 'y2'
+      }
+    },
+    axis: {
+      y: {
+        label: { // ADD
+          text: 'Number of Data Breaches',
+          position: 'outer-middle'
+        }
+      },
+      y2: {
+        show: true,
+        label: { // ADD
+          text: 'Records Exposed (in millions)',
+          position: 'outer-middle'
+        }
+      }
+    }
+});
 
      var chart3 = c3.generate({
-      bindto: '#resourceOfficersChart',
+      bindto: '#marriottbrokendown',
       data: {
         // iris data from R
         columns: [
-          ['Present', 35],
-          ['Not present', 65],
+          ['Encrypted Passport Numbers', 4.8],
+          ['Unencrypted Passport Numbers', 1.3],
+          ['Encrypted Payment Card Numbers', 2.4],
+          ['Other Personal Data', 91.4]
         ],
         type : 'pie',
         onclick: function (d, i) { console.log("onclick", d, i); },
