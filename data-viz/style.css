@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Rubik');
 
-body {background-color: #D7E4FF;}
+body {background-color: #D6FFD6;}
 
 .cont {
   margin:0 auto;
@@ -43,7 +43,7 @@ body {background-color: #D7E4FF;}
   text-align: center;
   margin:0 auto;
   color: black;
-  background-image: radial-gradient(#D47AB3, #D7E4FF)
+  background-image: radial-gradient(#D9C8C1, #D6FFD6)
 }
 
 .chapbody {
