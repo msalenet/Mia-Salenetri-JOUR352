@@ -7,6 +7,15 @@ body {background-color: #D7E4FF;}
   width: 90%;
 }
 
+.banner {
+    width:2100px;
+}
+@media screen and (max-width: 2100px) {
+    .banner {
+        width:100%;
+    }
+}
+
 .headline {
   font-family: 'bree serif', serif;
   text-align:center;
